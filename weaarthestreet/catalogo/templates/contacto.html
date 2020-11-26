@@ -1,0 +1,72 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    {% load static %}
+    </head>
+    <body>
+        <div class="container-fluid" style="padding-top: 20px;">
+            <form id="gg" action="index.html" id="formulario">
+              <label>Nombre:</label>
+              <input type="text" name="nombre" minlength="2">
+            
+              <label>Apellido: </label>
+              <input type="text" name="apellido" minlength="2">
+              
+              <label>Correo Electrónico: </label>
+              <input type="text" name="email" required placeholder="wearthestreet@gmail.cl">
+            
+              <label>Telefono: </label>
+              <input type="text" name="fono" minlength="9" required>
+            
+              <label>Fecha: </label>
+              <input type="date" name="fecha" min="2020-01-01" required>
+    
+              <label>¿Que necesitas?</label>
+              <input type="text" name="opinion" placeholder="Escribe aqui">
+              
+              
+    
+            </form>
+          </div>
+
+          <div class="container-fluid">
+              <div>
+                  
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <button class="btn btn" id="oso">Enviar</button>
+                  <br>
+                  <br>
+                  <br>
+                  
+                  
+                 
+                 
+
+              </div>
+          </div>
+    </body>
+</html>
+{% endblock %}

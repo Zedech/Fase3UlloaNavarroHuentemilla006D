@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block title %}<title>Wear The Street</title>{% endblock %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% load static %}
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    <script src="{% static 'js/validacion.js' %}"></script>
+
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estilo.css' %}">
+
+</head>
+<body>
+<!-- NavBar -->
+<nav class="navbar navbar-expand-md navbar-dark" id="osito">
+    <a class="navbar-brand alerta" href="{% url 'index' %}" id="P"> Wear The Street</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--links NavBar -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" id="P">
+            Hombre
+          </a>
+          <div class="dropdown-menu" >
+            <a class="dropdown-item alerta" href="{% url 'zapatilla_hombre' %}">Zapatillas</a>
+            <a class="dropdown-item alerta" href="{% url 'ropa_hombre' %}">Vestuario</a>
+            <a class="dropdown-item alerta" href="{% url 'accesorios' %}">Accesorios</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" id="P">
+            Mujer
+          </a>
+          <div class="dropdown-menu" >
+            <a class="dropdown-item alerta" href="{% url 'zapatilla_mujer' %}">Zapatillas</a>
+            <a class="dropdown-item" href="#">Vestuario</a>
+            <a class="dropdown-item alerta" href="{% url 'accesorios' %}">Accesorios</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link alerta" href="{% url 'accesorios' %}" id="P">Accesorio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link alerta" href="{% url 'contacto' %}" id="P">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link alerta" href="{% url 'lista' %}" id="P">Lista</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+{% block content %}{% endblock %}
+<div class="container">
+  <div>
+    <br>
+  </div>
+  
+</div>
+  <footer >
+        <div class="container">
+          <div class="row">
+              <div class="col-xs-12 col-md-6">
+                  <h6 class="text-muted lead">CONTACTO:</h6>
+                  <h6 class="text-muted">
+                  Padre hurtado 657<br>
+                  Teléfonos: 998756062<br>
+                  </h6>
+              </div>
+              <div class="col-xs-12 col-md-6">
+              <div class="pull-right">
+              <h6 class="text-muted lead">ENCUENTRANOS EN LAS REDES</h6>
+                    <div class="redes-footer">
+                        <a href="https://www.facebook.com/"><img src="{% static 'img/facebook.png' %}" id="icono"></a>
+                        <a href="https://www.instagram.com/"><img src="{% static 'img/instagram.png' %}" id="icono"></a>
+                        <a href="https://www.youtube.com/"><img src="{% static 'img/youtube.png' %}" id="icono"></a>
+                    </div>
+              </div>
+              <div class="row"> <p class="text-muted small text-right"><br> Todos los derechos reservados.</p></div>
+          </div>
+        </div>  
+      </div>
+      </footer>
+
+</body>
+</html>

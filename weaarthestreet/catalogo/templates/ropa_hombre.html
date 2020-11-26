@@ -1,0 +1,257 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load static %}
+        
+</head>
+<body>
+<!-- Bienvenida con foto -->
+<div class="container-fluid">
+    <div class="row" style="padding-top: 20px;">
+      <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12" id="CajaNegra">
+        <h1 id="h1">Men's StreetWear</h1> 
+        <p id="P">La mejor ropa para que luzcas con el estilo que mereces, siempre fresco y re facha mi pana.  <p>
+      </div>
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+          <img src="{% static 'img/gg.jpg' %}" class="img-fluid" alt="">
+        </div>
+    </div>
+  </div>
+
+   <!-- carrucel -->
+   <div class="container-fluid" id="Carrucell">
+    <div class="row">
+      <div id="Carrucel"  class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#Carrucel" data-slide-to="0" class="active"></li>
+          <li data-target="#Carrucel" data-slide-to="1"></li>
+          <li data-target="#Carrucel" data-slide-to="2"></li>
+        </ol>
+        <!-- Fotos carrucel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="{% static 'img/NIKEJ-ORDAN-JACKETgris.jpg' %}" alt="" >
+          </div>
+          <div class="carousel-item">
+              <img class="d-block w-100" src="{% static 'img/PoleronFilaCruz.jpg' %}"alt="">
+          </div>
+          <div class="carousel-item">
+              <img class="d-block w-100" src="{% static 'img/ChaquetaChampions.jpg' %}" alt="">
+          </div>
+        </div>
+        <!-- botones carrucel a izquierda y derecha -->      
+        <a class="carousel-control-prev" href="#Carrucel" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#Carrucel" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Card chaquetas -->
+  <div class="container">
+    <div class="row"> 
+        <div class="col-lg-4" id="Caja" >        
+            <div class="card" >
+              <img class="card-img-top img-fluid" src="{% static 'img/chaqueta-jordan-23.jpg' %}" alt="">            
+              <div class="card-body">
+                <h4 class="card-title">Poleron Jordan</h4>
+                <p class="card-text">Este hermoso poleron jordan, con capucha, con el clasico numero de Michael jordan en el pecho,
+                  con un estilo clasico, pero nunca anticuado. </p>
+                <a href="#" class="btn btn" id="boton">Entrar</a>
+              </div>
+            </div>          
+        </div>
+  
+        <div class="col-lg-4" id="Caja" >        
+            <div class="card" >
+              <div class="card-body">
+                <h4 class="card-title">Chaqueta Street Wear </h4>
+                <p class="card-text">Una hermosa chaqueta color amarillo, estilo bomber, para combinar con cualquier vestuario Wear Steet,
+                  una prenda que no te puede faltar. </p>
+                <a href="#" class="btn btn" id="boton">Entrar</a>
+              </div>
+              <img class="card-img-bottom img-fluid" src="{% static 'img/chaqueta-steet-wear amarilla.jpg' %}" alt="">                        
+            </div>          
+        </div>
+
+        <div class="col-lg-4" id="Caja" >        
+            <div class="card" >
+              <img class="card-img-top img-fluid" src="{% static 'img/chaqueta-roja.jpg' %}" alt="">            
+              <div class="card-body">Red Street</h4>
+                <p class="card-text">Sale de lo normal con este cortaviento rojo, imponente y con mucho estilo, vestuari perfecto para cualquier ocasion, una salida al parque
+                  esas salidas nocturnas con tu amigos. </p> 
+                <a href="#" class="btn btn" id="boton">Entrar</a>
+              </div>
+            </div>          
+        </div>
+    </div>
+</div>
+<!-- Card chaquetas-->
+<div class="container">
+    <div class="row"> 
+        <div class="col-lg-4" id="Caja" >        
+            <div class="card" >
+              <img class="card-img-top img-fluid" src="{% static 'img/NIKE_JORDAN_Wings_MA-1_Bomber_JACKET.png' %}" alt="">            
+              <div class="card-body">
+                <h4 class="card-title">Nike Jordan Bomber MA-1</h4>
+                <p class="card-text">Mientras esperas al margen tu oportunidad en la cancha, usa esta chaqueta bomber con aislamiento que brindara calidez, comodidad y estilo. </p>
+                <a href="#" class="btn btn" id="boton">Entrar</a>
+              </div>
+            </div>          
+        </div>
+  
+        <div class="col-lg-4" id="Caja" >        
+            <div class="card" >
+              <div class="card-body">
+                <h4 class="card-title">Chaqueta Champion</h4>
+                <p class="card-text">Un estilo totalmente clasico, pero adaptado 100% para cualquier ocasion a la que te enfrentes, comoda, resistente y siempre a la moda.</p>
+                <a href="#" class="btn btn" id="boton">Entrar</a>
+              </div>
+              <img class="card-img-bottom img-fluid" src="{% static 'img/Chaqueta_Champion.png' %}" alt="">                        
+            </div>          
+        </div>
+
+        <div class="col-lg-4" id="Caja" >        
+            <div class="card" >
+              <img class="card-img-top img-fluid" src="{% static 'img/Poleron-fila-cruz.png' %}" style="padding: 20px;" alt="">            
+              <div class="card-body">
+                <h4 class="card-title">Cortaviento Fila Cruz</h4>
+                <p class="card-text">Multifuncional, por si quieres lucir impecable o por si lo necesitas para algun dia de deportes, un estilo sobrio para cualquier ocasion.</p>
+                <a href="#" class="btn btn" id="boton">Entrar</a>
+              </div>
+            </div>          
+        </div>
+    </div>
+  </div>
+   
+  <!-- Seccion mujer -->
+   <div class="container-fluid">
+    <div class="row" style="padding-top: 20px;">
+      <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+        <img src="{% static 'img/tech-wear-mujer-2.jpg' %}" class="img-fluid" alt="">
+      </div>
+      <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12" id="CajaNegra2" >
+        <h1 id="h1">Women's streetwear</h1> 
+        <p id="P">Porque sabemos que te gusta estar siempre a la moda, tenemos lo mejor en ropa para ellas, se siempre la número 1, encontraras zapatillas y ropa para los gustos femeninos.  <p>
+      </div>
+    </div>
+  </div>
+  <!-- Card Pantalon -->
+  <div class="container">
+    <div class="row"> 
+        <div class="col-lg-4" id="Caja" >        
+            <div class="card" >
+              <img class="card-img-top img-fluid" src="{% static 'img/Pantalon_Deportivo_adidas.jpg' %}" alt="">            
+              <div class="card-body">
+                <h4 class="card-title">AEROREADY 3 TIRAS</h4>
+                <p class="card-text">Perfecciona tus habilidades de kickboxing con 
+                  este pantalón de entrenamiento adidas. Presenta un diseño en tejido ligero 
+                  y elástico que te mantiene seco mientras practicas tus golpes.</p>
+                <a href="#" class="btn btn" id="boton">Entrar</a>
+              </div>
+            </div>          
+        </div>
+  
+        <div class="col-lg-4" id="Caja" >        
+            <div class="card" >
+              <div class="card-body">
+                <h4 class="card-title">MUST HAVES STADIUM</h4>
+                <p class="card-text">La energía de las tribunas aún retumba en tu mente. Cada uno de tus 
+                  músculos siente el esfuerzo que hiciste. 
+                  Envuélvete con comodidad con este pantalón adidas y sal a las calles sintiéndote bien. </p>
+                <a href="#" class="btn btn" id="boton">Entrar</a>
+              </div>
+              <img class="card-img-bottom img-fluid" src="{% static 'img/Pantalon_Must_Haves_Stadium_Negro.jpg' %}" alt="">                        
+            </div>          
+        </div>
+
+        <div class="col-lg-4" id="Caja" >        
+            <div class="card" >
+              <img class="card-img-top img-fluid" src="{% static 'img/Pantalon_O_Shape_Rojo.jpg' %}" alt="">            
+              <div class="card-body">
+                <h4 class="card-title">O SHAPE</h4>
+                <p class="card-text">Desafía tus límites dentro y fuera de la cancha. Expande tu horizonte.
+                   El pantalón adidas O Shape te permite enfrentarte a cada reto con estilo, un estilo audaz pero a la moda.  </p>
+                <a href="#" class="btn btn" id="boton">Entrar</a>
+              </div>
+            </div>          
+        </div>
+    </div>
+  </div>
+  <!-- Card Pantalon -->
+  <div class="container">
+    <div class="row"> 
+        <div class="col-lg-4" id="Caja" >        
+            <div class="card" >
+              <img class="card-img-top img-fluid" src="{% static 'img/pantalones-de-entrenamiento-con-estampado-de-camuflaje-tech.jpg' %}" alt="">            
+              <div class="card-body">
+                <h4 class="card-title">Nike Tech Fleece</h4>
+                <p class="card-text">Los pantalones de entrenamiento Nike Tech Fleece son ideales para el clima frío,
+                   ya que están confeccionados con una tela espaciadora de algodón de doble
+                    cara que acumula el calor sin agregar peso adicional.</p>
+                <a href="#" class="btn btn" id="boton">Entrar</a>
+              </div>
+            </div>          
+        </div>
+  
+        <div class="col-lg-4" id="Caja" >        
+            <div class="card" >
+              <div class="card-body">
+                <h4 class="card-title">Jordan Air Therma</h4>
+                <p class="card-text">Los pantalones Jordan Jumpman Classics están confeccionados con French Terry cepillado
+                   suavemente para brindar comodidad. Ofrecen con una sensación cómoda y relajada.</p>
+                <a href="#" class="btn btn" id="boton">Entrar</a>
+              </div>
+              <img class="card-img-bottom img-fluid" src="{% static 'img/pantalones-de-entrenamiento-jordan.jpg' %}" alt="">                        
+            </div>          
+        </div>
+
+        <div class="col-lg-4" id="Caja" >        
+            <div class="card" >
+              <img class="card-img-top img-fluid" src="{% static 'img/pantalones-de-tejido-fleece-jordan-jumpman-classics.jpg' %}" alt="">            
+              <div class="card-body">
+                <h4 class="card-title">Jordan Jumpman Classics</h4>
+                <p class="card-text">Los pantalones Jordan Jumpman Classics están confeccionados con French Terry cepillado suavemente para brindar comodidad y cuentan con una pretina con bloqueo regulable.</p>
+                <a href="#" class="btn btn" id="boton">Entrar</a>
+              </div>
+            </div>          
+        </div>
+    </div>
+  </div>
+  
+<!-- Seccion Accesorios -->
+    <div class="container-fluid">
+        <div class="row" style="padding-top: 20px;">
+            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12" id="CajaNegra">
+                <h1 id="h1">Accesorios</h1> 
+                <p id="P">qui encontraras todo lo necesario para que puedas complementar tu vestuario, haciendo un juego perfecto entre funcionalidad y estilo, luciendo siempre con lo ultimo a la moda.    <p>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                  <a target="_blank" href="{% url 'accesorios' %}"><img src="{% static 'img/banano-wear.jpg' %}" class="img-fluid" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+  
+
+
+</body>
+
+
+
+
+
+</html>
+{% endblock %}

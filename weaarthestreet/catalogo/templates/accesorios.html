@@ -1,0 +1,140 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    {% load static %}
+</head>
+<body>
+    <!-- Bienvenida con foto -->
+    <div class="container-fluid">
+        <div class="row" style="padding-top: 20px;">
+          <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12" id="CajaNegra">
+            <h1 id="h1">Accesorios</h1> 
+            <p id="P">Aqui encontraras todo lo necesario para que puedas complementar tu vestuario, haciendo un juego perfecto entre funcionalidad y estilo, luciendo siempre con lo ultimo a la moda.  <p>
+          </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+              <img src="{% static 'img/banano-wear.jpg' %}" class="img-fluid" alt="">
+            </div>
+        </div>
+      </div>
+
+      <!-- Card Nike -->
+      <div class="container">
+        <div class="row"> 
+            <div class="col-lg-4" id="Caja" >        
+                <div class="card" >
+                  <img class="card-img-top img-fluid" src="{% static 'img/Banano-what-up.jpg' %}" alt="">            
+                  <div class="card-body">
+                    <h4 class="card-title">WAIST BAG V2 NEGRO</h4>
+                    <p class="card-text">Toda la comodidad de un banano, pero con todo el estilo que necesitas.</p>
+                    <a href="{% url 'accesorios' %}" class="btn btn" id="boton">Entrar</a>
+                  </div>
+                </div>          
+            </div>
+      
+            <div class="col-lg-4" id="Caja" >        
+                <div class="card" >
+                  <div class="card-body">
+                    <h4 class="card-title">Chest Bag Pyramid</h4>
+                    <p class="card-text">Un modelo que va en el pecho, ideal para tu ropa StreetWear.</p>
+                    <a href="{% url 'accesorios' %}" class="btn btn" id="boton">Entrar</a>
+                  </div>
+                  <img class="card-img-bottom img-fluid" src="{% static 'img/PIMPS-BANANO.png' %}" alt="">                        
+                </div>          
+            </div>
+
+            <div class="col-lg-4" id="Caja" >        
+                <div class="card" >
+                  <img class="card-img-top img-fluid" src="{% static 'img/banano_champions.png' %}" alt="">            
+                  <div class="card-body">
+                    <h4 class="card-title">
+                        Banano Champion Negro</h4>
+                    <p class="card-text">Ideal para llevar tu billetera y combinarlo con tu ropa Champion.</p>
+                    <a href="{% url 'accesorios' %}" class="btn btn" id="boton">Entrar</a>
+                  </div>
+                </div>          
+            </div>
+        </div>
+    </div>
+    <!-- zapatillas hombre -->
+    <div class="container-fluid">
+        <div class="row" style="padding-top: 20px;">
+          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+            <a  target="_blank" href="{% url 'zapatilla_hombre' %}"><img src="{% static 'img/jordan-reflejo-agua.jpg' %}" class="img-fluid" alt=""></a>
+          </div>
+          <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12" id="CajaNegra2" >
+            <h1 id="h1">urban sneakers for him</h1> 
+            <p id="P">Las mejores y más exclusivas zapatillas, con las cuales te veras siempre como un campeon, luciendo un estilo increible, con la mejor calidad y comodidad.  <p>
+          </div>
+        </div>
+      </div>
+      <!-- Zapatillas mujer -->
+        
+      <div class="container-fluid">
+        <div class="row" style="padding-top: 20px;">
+          <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12" id="CajaNegra">
+            <h1 id="h1">Urban sneakers for her</h1> 
+            <p id="P">Las mejores y más exclusivas zapatillas, con las cuales te veras siempre como la numero 1, luciendo un estilo increible, con la mejor calidad y comodidad.  <p>
+          </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                <a target="_blank" href="{% url 'zapatilla_mujer' %}"><img src="{% static 'img/ff.jpg' %}" class="img-fluid" alt=""></a>
+            </div>
+        </div>
+      </div>
+
+      <!-- ropa mujer -->
+      <div class="container-fluid">
+        <div class="row" style="padding-top: 20px;">
+          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+            <img src="{% static 'img/tech-wear-mujer-2.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12" id="CajaNegra2" >
+            <h1 id="h1">Women's StreetWear</h1> 
+            <p id="P">Porque sabemos que te gusta estar siempre a la moda, tenemos lo mejor en ropa para ellas, se siempre la número 1, encontraras zapatillas y ropa para los gustos femeninos.  <p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ropa hombre -->
+        <div class="container-fluid">
+            <div class="row" style="padding-top: 20px;">
+              <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12" id="CajaNegra">
+                <h1 id="h1">Men's StreetWear</h1> 
+                <p id="P">La mejor ropa para que luzcas con el estilo que mereces, siempre fresco y re facha mi pana.  <p>
+              </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                  <a target="_blank" href="{% url 'ropa_hombre' %}"><img src="{% static 'img/gg.jpg' %}" class="img-fluid" alt=""></a>
+                </div>
+            </div>
+          </div>
+
+          <div id="galeria" class="container-fluid">
+            <div class="text-center pt-5">
+                <h1>Galeria</h1>
+                <p></p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3" id="banano">
+                    <img src="{% static 'img/banano-2.jpg' %}" alt="Galeria Imagen" class="img-fluid" >
+                </div>
+                <div class="col-lg-3" id="banano">
+                    <img src="{% static 'img/Banano-what-up.jpg' %}" alt="Galeria Imagen" class="img-fluid">
+                </div>
+                <div class="col-lg-3" id="banano">
+                    <img src="{% static 'img/banano_champions.png' %}" alt="Galeria Imagen" class="img-fluid" >
+                </div>
+                <div class="col-lg-3" id="banano">
+                    <img src="{% static 'img/banano-wear.jpg' %}" alt="Galeria Imagen" class="img-fluid" >
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
+{% endblock %}

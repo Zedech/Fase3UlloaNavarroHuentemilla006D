@@ -1,0 +1,174 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load static %}
+
+</head>
+<body>
+    <!-- Bienvenida con foto -->
+    <div class="container-fluid">
+        <div class="row" style="padding-top: 20px;">
+          <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12" id="CajaNegra">
+            <h1 id="h1">Urban sneakers for her</h1> 
+            <p id="P">Las mejores y más exclusivas zapatillas, con las cuales te veras siempre como la numero 1, luciendo un estilo increible, con la mejor calidad y comodidad.  <p>
+          </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+              <img src="{% static 'img/ff.jpg' %}" class="img-fluid" alt="">
+            </div>
+        </div>
+      </div>
+       <!-- Card Nike -->
+       <div class="container">
+        <div class="row"> 
+            <div class="col-lg-4" id="Caja" >        
+                <div class="card" >
+                  <img class="card-img-top img-fluid" src="{% static 'img/Air-max-90-mujer.jpg' %}" alt="">            
+                  <div class="card-body">
+                    <h4 class="card-title">Air Max 90</h4>
+                    <p class="card-text">Con colores más frescos que las flores de verano, esta versión del campeón 
+                        de los años 90 te brinda la comodidad y el look en los que confías.</p>
+                    <a href="{% url 'zapatilla_mujer' %}" class="btn btn" id="boton">Entrar</a>
+                  </div>
+                </div>          
+            </div>
+      
+            <div class="col-lg-4" id="Caja" >        
+                <div class="card" >
+                  <div class="card-body">
+                    <h4 class="card-title">Air Force 1 Sage Low</h4>
+                    <p class="card-text">El Nike Air Force 1 Sage Low reinventa el estilo del modelo original de
+                         básquetbol, por y para las mujeres, 
+                        y lleva la altura y confección hasta nuevos niveles.</p>
+                    <a href="{% url 'zapatilla_mujer' %}" class="btn btn" id="boton">Entrar</a>
+                  </div>
+                  <img class="card-img-bottom img-fluid" src="{% static 'img/Nike-Air-Force-1-Sage-Low.jpg' %}" alt="">                        
+                </div>          
+            </div>
+
+            <div class="col-lg-4" id="Caja" >        
+                <div class="card" >
+                  <img class="card-img-top img-fluid" src="{% static 'img/air-max-720-mujer.jpg' %}" alt="">            
+                  <div class="card-body">
+                    <h4 class="card-title">Air Max 720-818</h4>
+                    <p class="card-text">El calzado Nike MX-720-818 usa materiales inspirados en los trajes espaciales
+                         con costuras acolchadas que brindan una apariencia futurista.</p>
+                    <a href="{% url 'zapatilla_mujer' %}" class="btn btn" id="boton">Entrar</a>
+                  </div>
+                </div>          
+            </div>
+        </div>
+    </div>
+    
+    <!--  Card Adidas -->
+    <div class="container">
+        <div class="row"> 
+            <div class="col-lg-4" id="Caja" >        
+                <div class="card" >
+                  <img class="card-img-top img-fluid" src="{% static 'img/OZWEEGO-MUJER.jpg' %}" alt="">            
+                  <div class="card-body">
+                    <h4 class="card-title"> Adidas OZWEEGO</h4>
+                    <p class="card-text">Sigue avanzando siempre. Estas zapatillas adidas OZWEEGO tienen 
+                        una distintiva silueta noventera, pero con los detalles traslúcidos y la s
+                        uela liviana que necesitas para el mundo de hoy. No lo pienses. El futuro es tuyo.
+
+                  </p>
+                    <a href="{% url 'zapatilla_mujer' %}" class="btn btn" id="boton">Entrar</a>
+                  </div>
+                </div>          
+            </div>
+      
+            <div class="col-lg-4" id="Caja" >        
+                <div class="card" >
+                  <div class="card-body">
+                    <h4 class="card-title"> Adidas SLEEK SUPER</h4>
+                    <p class="card-text">Estas zapatillas adidas Sleek Super tienen un efecto retro de caleidoscopio, con lindos colores y 
+                        formas que combinan perfectamente. Lucen una suela con plataforma. No podrás dejar de mirar tus pies al usarlas.<br> </p>
+                    <a href="{% url 'zapatilla_mujer' %}" class="btn btn" id="boton">Entrar</a>
+                  </div>
+                  <img class="card-img-bottom img-fluid" src="{% static 'img/SLEEK-SUPER-MUJER.jpg' %}" alt="">                        
+                </div>          
+            </div>
+
+            <div class="col-lg-4" id="Caja" >        
+                <div class="card" >
+                  <img class="card-img-top img-fluid" src="{% static 'img/U_PATH-X-MUJER-ADIDAS.jpg' %}" alt="">            
+                  <div class="card-body">
+                    <h4 class="card-title">Adidas U PATH X</h4>
+                    <p class="card-text">Las zapatillas U_Path presentan una silueta elegante y futurista de 
+                        inspiración deportiva y urbana. Su exterior está confeccionado con malla ligera 
+                        e incorpora un refuerzo de cuero en el talón que les añade un acabado de lujo.</p>
+                    <a href="{% url 'zapatilla_mujer' %}" class="btn btn" id="boton">Entrar</a>
+                  </div>
+                </div>          
+            </div>
+        </div>
+      </div>
+
+      <!-- Seccion hombre -->
+      <div class="container-fluid">
+        <div class="row" style="padding-top: 20px;">
+          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+            <a  target="_blank" href=""><img src="{% static 'img/jordan-reflejo-agua.jpg' %}" class="img-fluid" alt=""></a>
+          </div>
+          <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12" id="CajaNegra2" >
+            <h1 id="h1">urban sneakers for him</h1> 
+            <p id="P">Las mejores y más exclusivas zapatillas, con las cuales te veras siempre como un campeon, luciendo un estilo increible, con la mejor calidad y comodidad.  <p>
+          </div>
+        </div>
+      </div>
+
+      <!--  Card New balance -->
+      <div class="container">
+        <div class="row"> 
+            <div class="col-lg-4" id="Caja" >        
+                <div class="card" >
+                  <img class="card-img-top img-fluid" src="{% static 'img/new-balance-850-rosa-mujer.jpg' %}" alt="">            
+                  <div class="card-body">
+                    <h4 class="card-title">New Balance 850 </h4>
+                    <p class="card-text">levamos la nueva escuela a un clásico con las 850 con una silueta minimalista adelantada 
+                      a su tiempo cuando se presentó originalmente en 1996. Cuenta con una mezcla de gamuza y malla transpirable. </p>
+                    <a href="{% url 'zapatilla_mujer' %}" class="btn btn" id="boton">Entrar</a>
+                  </div>
+                </div>          
+            </div>
+      
+            <div class="col-lg-4" id="Caja" >        
+                <div class="card" >
+                  <div class="card-body">
+                    <h4 class="card-title"> New Balance 997 Sport</h4>
+                    <p class="card-text">Las zapatillas 997 Sport para mujer, están dotadas de la amortiguación 
+                      en la entresuela con las tecnologías patentadas ENCAP REVEAL y ABZORB, 
+                      para ofrecerte estabilidad y amortiguación en la planta del pie. </p>
+                    <a href="{% url 'zapatilla_mujer' %}" class="btn btn" id="boton">Entrar</a>
+                  </div>
+                  <img class="card-img-bottom img-fluid" src="{% static 'img/new-balance-997sport-negra-mujer.jpg' %}" alt="">                        
+                </div>          
+            </div>
+
+            <div class="col-lg-4" id="Caja" >        
+                <div class="card" >
+                  <img class="card-img-top img-fluid" src="{% static 'img/new-balance-997h-mujer.jpg' %}" alt="">            
+                  <div class="card-body">
+                    <h4 class="card-title">New Balance 997H</h4>
+                    <p class="card-text">Por excelencia clásico con señales de diseño de los años 90, su capellada premium 
+                      está hecha con un rico material de gamuza y detalles de cuero que te mantienen con un aspecto nítido, mientras la 
+                       amortiguación brinda comodidad.</p>
+                    <a href="{% url 'zapatilla_mujer' %}" class="btn btn" id="boton">Entrar</a>
+                  </div>
+                </div>          
+            </div>
+        </div>
+      </div>
+
+
+</body>
+
+
+</html>
+{% endblock %}

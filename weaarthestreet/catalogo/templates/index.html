@@ -1,0 +1,228 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load static %}
+    
+</head>
+
+<body>
+    <!-- Bienvenida con foto -->
+    <div class="container-fluid">
+        <div class="row" style="padding-top: 20px;">
+          <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12" id="CajaNegra">
+            <h1 id="h1">Bienvenidos a Wear The Street</h1> 
+            <p id="P" style="display: none;">Una tienda dedicada al Street wear, con una gran cantidad y variedad de zapatillas, ropa a la moda, llena
+               de estilo para lucir de la mejor manera, los mejores accesorios, estilo puro y duro.<p>
+                 <div>
+                  <button class="btn btn" id="mostar">Mostrar</button> 
+                 </div>
+        </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+              <a target="_blank" href="{% url 'ropa_hombre' %}"><img src="{% static 'img/nike-air-blanca-pantalonblanco.jpg' %}" class="img-fluid" alt=""></a>
+              
+            </div>
+        </div>
+    </div>
+
+     <!-- carrucel -->
+     <div class="container-fluid" id="Carrucell">
+        <div class="row">
+          <div id="Carrucel"  class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#Carrucel" data-slide-to="0" class="active"></li>
+              <li data-target="#Carrucel" data-slide-to="1"></li>
+              <li data-target="#Carrucel" data-slide-to="2"></li>
+            </ol>
+            <!-- Fotos carrucel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a target="_blank" href="{% url 'ropa_hombre' %}"><img class="d-block w-100" src="{% static 'img/NIKEJ-ORDAN-JACKETgris.jpg' %}" alt="" ></a>
+              </div>
+              <div class="carousel-item">
+                  <a target="_blank" href="{% url 'ropa_hombre' %}"><img class="d-block w-100" src="{% static 'img/PoleronFilaCruz.jpg' %}" alt=""></a>
+              </div>
+              <div class="carousel-item">
+                  <a target="_blank" href="{% url 'ropa_hombre' %}"><img class="d-block w-100" src="{% static 'img/ChaquetaChampions.jpg' %}" alt=""></a>
+              </div>
+            </div>
+            <!-- botones carrucel a izquierda y derecha -->      
+            <a class="carousel-control-prev" href="#Carrucel" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#Carrucel" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Card Nike -->
+      <div class="container">
+        <div class="row"> 
+            <div class="col-lg-4" id="Caja" >        
+                <div class="card" >
+                  <img class="card-img-top img-fluid" src="{% static 'img/air-max-90-azul.jpg' %}" alt="">            
+                  <div class="card-body">
+                    <h4 class="card-title">Air Max 90</h4>
+                    <p class="card-text">Líneas impecables, versátiles y atemporales: el calzado de la gente regresa con el Nike Air Max 90. 
+                        Con la misma suela icónica, los revestimientos cosidos y los detalles clásicos de TPU que has llegado a amar, 
+                        te permite caminar entre el panteón del Air. </p>
+                    <a href="{% url 'zapatilla_hombre' %}" class="btn btn" id="boton">Entrar</a>
+                  </div>
+                </div>          
+            </div>
+      
+            <div class="col-lg-4" id="Caja" >        
+                <div class="card" >
+                  <div class="card-body">
+                    <h4 class="card-title">Air Force 1 '07</h4>
+                    <p class="card-text">Básquetbol en el parque, barbacoas y sol de domingo. El resplandor sobrevive con el calzado Nike Air Force 1 ’07, 
+                        un modelo clásico del básquetbol, este OG le da un toque novedoso al calzado clasico, pero siempre
+                        impecable. </p>
+                    <a href="{% url 'zapatilla_hombre' %}" class="btn btn" id="boton">Entrar</a>
+                  </div>
+                  <img class="card-img-bottom img-fluid" src="{% static 'img/air-force-1-07.jpg' %}" alt="">                        
+                </div>          
+            </div>
+
+            <div class="col-lg-4" id="Caja" >        
+                <div class="card" >
+                  <img class="card-img-top img-fluid" src="{% static 'img/air-max-720.jpg' %}" alt="">            
+                  <div class="card-body">
+                    <h4 class="card-title">Air Max 720 (OBJ)</h4>
+                    <p class="card-text">Distorsiona la atmósfera con el brillo de tu luz con el Nike Air Max 720 (OBJ), 
+                        que cuenta con la unidad Air más alta de Nike hasta la fecha. Los colores están inspirados
+                         en el mundo natural, un contrapunto al look futurista de este calzado. </p>
+                    <a href="{% url 'zapatilla_hombre' %}" class="btn btn" id="boton">Entrar</a>
+                  </div>
+                </div>          
+            </div>
+        </div>
+    </div>
+    <!-- Card Nike -->
+    <div class="container">
+        <div class="row"> 
+            <div class="col-lg-4" id="Caja" >        
+                <div class="card" >
+                  <img class="card-img-top img-fluid" src="{% static 'img/Air-max-90-mujer.jpg' %}" alt="">            
+                  <div class="card-body">
+                    <h4 class="card-title">Air Max 90</h4>
+                    <p class="card-text">Con colores más frescos que las flores de verano, esta versión del campeón 
+                        de los años 90 te brinda la comodidad y el look en los que confías.</p>
+                    <a href="{% url 'zapatilla_mujer' %}" class="btn btn" id="boton">Entrar</a>
+                  </div>
+                </div>          
+            </div>
+      
+            <div class="col-lg-4" id="Caja" >        
+                <div class="card" >
+                  <div class="card-body">
+                    <h4 class="card-title">Air Force 1 Sage Low</h4>
+                    <p class="card-text">El Nike Air Force 1 Sage Low reinventa el estilo del modelo original de
+                         básquetbol, por y para las mujeres, 
+                        y lleva la altura y confección hasta nuevos niveles.</p>
+                    <a href="{% url 'zapatilla_mujer' %}" class="btn btn" id="boton">Entrar</a>
+                  </div>
+                  <img class="card-img-bottom img-fluid" src="{% static 'img/Nike-Air-Force-1-Sage-Low.jpg' %}" alt="">                        
+                </div>          
+            </div>
+
+            <div class="col-lg-4" id="Caja" >        
+                <div class="card" >
+                  <img class="card-img-top img-fluid" src="{% static 'img/air-max-720-mujer.jpg' %}" alt="">            
+                  <div class="card-body">
+                    <h4 class="card-title">Air Max 720-818</h4>
+                    <p class="card-text">El calzado Nike MX-720-818 usa materiales inspirados en los trajes espaciales
+                         con costuras acolchadas que brindan una apariencia futurista.</p>
+                    <a href="{% url 'zapatilla_mujer' %}" class="btn btn" id="boton">Entrar</a>
+                  </div>
+                </div>          
+            </div>
+        </div>
+    </div>
+    <!-- Seccion mujer -->
+    <div class="container-fluid">
+        <div class="row" style="padding-top: 20px;">
+          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+            <a target="_blank" href="{% url 'zapatilla_mujer' %}"><img src="{% static 'img/tech-wear-mujer-2.jpg' %}" class="img-fluid" alt=""></a>
+          </div>
+          <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12" id="CajaNegra2" >
+            <h1 id="h1">Women's StreetWear</h1> 
+            <p id="plugo">Porque sabemos que te gusta estar siempre a la moda, tenemos lo mejor en ropa para ellas, se siempre la número 1, encontraras zapatillas y ropa para los gustos femeninos.<p>
+              <button class="btn btn animacion" >Animar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Yezzy -->
+      <div class="container">
+        <div class="row"> 
+            <div class="col-lg-4" id="Caja" >        
+                <div class="card" >
+                  <img class="card-img-top img-fluid" src="{% static 'img/Adidas-Yeezy-Boost-700-V3_2.jpg' %}" alt="">            
+                  <div class="card-body">
+                    <h4 class="card-title">Yezzy Boost 700 v3</h4>
+                    <p class="card-text">los YEEZY 700 v3 presenta una parte superior compuesta de malla de ingeniería de monofilamento 
+                      con superposiciones
+                       de RPU para mayor estructura y durabilidad. 
+                       La caja de RPU tiene características que brillan en la oscuridad que brindan una apariencia 
+                       y sensación únicas. </p>
+                    <a href="{% url 'zapatilla_hombre' %}" class="btn btn" id="boton">Entrar</a>
+                  </div>
+                </div>          
+            </div>
+      
+            <div class="col-lg-4" id="Caja" >        
+                <div class="card" >
+                  <div class="card-body">
+                    <h4 class="card-title">Yezzy Boost 500 Bone White</h4>
+                    <p class="card-text">los YEEZY 500 Bone White presenta una parte superior compuesta de cuero de primera 
+                      calidad y malla. Una envoltura de goma a lo largo de la entresuela del pie brinda soporte y 
+                      resistencia a la abrasión con detalles de ribetes reflectantes alrededor. </p>
+                    <a href="{% url 'zapatilla_hombre' %}" class="btn btn" id="boton">Entrar</a>
+                  </div>
+                  <img class="card-img-bottom img-fluid" src="{% static 'img/yeezy-500.jpg' %}" alt="">                        
+                </div>          
+            </div>
+
+            <div class="col-lg-4" id="Caja" >        
+                <div class="card" >
+                  <img class="card-img-top img-fluid" src="{% static 'img/yezzy-350-oreo-v2.png' %}" style="padding: 20px;" alt="">            
+                  <div class="card-body">
+                    <h4 class="card-title">Yeezy Boost 350 V2</h4>
+                    <p class="card-text">El YEEZY BOOST 350 V2 presenta una parte superior compuesta de Primeknit rediseñado. 
+                      La franja lateral de monofilamento post-teñido está tejida en la parte superior. Los cordones se entretejen con hilos reflectantes. 
+                      La entresuela utiliza el innovador BOOST ™. </p>
+                    <a href="{% url 'zapatilla_hombre' %}" class="btn btn" id="boton">Entrar</a>
+                  </div>
+                </div>          
+            </div>
+        </div>
+      </div>
+
+      <!-- Seccion Accesorios -->
+      <div class="container-fluid">
+        <div class="row" style="padding-top: 20px;">
+          <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12" id="CajaNegra">
+            <h1 id="h1">Accesorios</h1> 
+            <p id="P">Aqui encontraras todo lo necesario para que puedas complementar tu vestuario, haciendo un juego perfecto entre funcionalidad y estilo, luciendo siempre con lo ultimo a la moda.  <p>
+          </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+              <a target="_blank" href="{% url 'accesorios' %}"><img src="{% static 'img/banano-wear.jpg' %}" class="img-fluid" alt=""></a>
+            </div>
+        </div>
+      </div>
+
+
+</body>
+</html>
+ {% endblock %}
