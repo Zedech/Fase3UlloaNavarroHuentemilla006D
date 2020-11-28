@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     {% block title %}<title>Wear The Street</title>{% endblock %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,18 +29,6 @@
     <!--links NavBar -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
-        {% if user.is_authenticated  %}
-
-          <li style="background-color: #2b2b2b;" li class="nav-item" >
-            <a class="nav-link alerta" href="{% url 'logout' %}" id="P"> Cerrar sesión </a>  
-          </li>
-
-          {% else %}
-          <li style="background-color: #000000;" li class="nav-item">
-            <a class="nav-link alerta" href="{% url 'login' %}" id="P"> Ingresar </a>  
-          </li>
-
-          {% endif %}
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" id="P">
             Hombre
@@ -70,7 +58,6 @@
         <li class="nav-item">
           <a class="nav-link alerta" href="{% url 'lista' %}" id="P">Lista</a>
         </li>
-        
       </ul>
     </div>
 </nav>
