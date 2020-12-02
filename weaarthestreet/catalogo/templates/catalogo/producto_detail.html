@@ -30,9 +30,15 @@
               </div>
           </div>
       </div>
-      
-
       {% endif %}
+      {% if user.is_staff %}
+      <a class="btn btn" href="{% url 'producto_update' pk=producto.pk %}" 
+      style="background-color: #000000c2; margin: 0px;  color: #ffffff;border-color: black; margin: auto;">
+      Actualizar</a>
+          
+      {% endif %}
+
+      
   </article>
 </section>
 </div>

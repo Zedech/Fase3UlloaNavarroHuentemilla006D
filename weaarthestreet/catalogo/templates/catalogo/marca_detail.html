@@ -10,10 +10,12 @@
 <section>
   <article class="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
     <h1>{{marca.marca}}</h1>
-      {% if request.user.is_superuser %}
+      
       <br>
+  
       <div class="conteiner-fluid">
         <div class="row">
+          {% if request.user.is_superuser %}
             <div class=" col-xs-12 col-sm-12 col-lg-12 col-xl-12">
                 <a class="btn btn" href="{% url 'marca_update' pk=marca.pk %}" 
                 style="background-color: #000000c2; margin: 0px;  color: #ffffff;border-color: black;">
@@ -21,13 +23,19 @@
                 <a class="btn btn" href="{% url 'marca_delete' pk=marca.pk %}" 
                 style="background-color: #000000c2; margin: 0px;  color: #ffffff; border-color: black;">
                 Eliminar</a>
-                
             </div>
+          {% endif %}
+          {% if user.is_staff %}
+          <a class="btn btn" href="{% url 'marca_update' pk=marca.pk %}" 
+          style="background-color: #000000c2; margin: 0px;  color: #ffffff;border-color: black; margin: auto;">
+          Actualizar</a>
+          
+          {% endif %}
         </div>
-    </div>
-      
+      </div>
+  
 
-      {% endif %}
+      
   </article>
 </section>
 </div>
