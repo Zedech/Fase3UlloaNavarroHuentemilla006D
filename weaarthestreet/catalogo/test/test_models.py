@@ -30,4 +30,4 @@ class GenreModelTest(TestCase):
         
     def test_get_absolute_url(self):
         producto=Producto.objects.get(id=2)
-        self.assertEquals(producto.get_absolute_url(), '/catalogo/gg/2')
+        self.assertEquals(producto.get_absolute_url(), '/catalogo/producto/2')
