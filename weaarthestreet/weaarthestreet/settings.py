@@ -38,8 +38,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'catalogo.apps.CatalogoConfig',
-    'sesion.apps.SesionConfig',
+    'sesion.apps.SesionConfig', #se registra la app de sesion
+    'rest_framework', #se registra la app de rest_framework
 ]
+
+REST_FRAMEWORK = { #se importa el parametro para la creacion de las paginas donde se mostraran los usuarios
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 8 #el tamaño de usuarios que mostrara por pagina
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

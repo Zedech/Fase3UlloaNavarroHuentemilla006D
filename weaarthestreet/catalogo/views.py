@@ -72,7 +72,7 @@ class MarcaUpdate(UpdateView):
 
 class MarcaDelete(DeleteView):
     model= Marca
-    success_url = reverse_lazy('marca')
+    success_url = reverse_lazy('index')
 
 
 class ProductoDetalles(generic.DetailView):
@@ -83,6 +83,13 @@ class MarcaDetalles(generic.DetailView):
 
 class ProductoListView(generic.ListView):
     model = Producto
+    
+
+
+    paginate_by = 10
+
+class MarcaListView(generic.ListView):
+    model = Marca
     
 
 

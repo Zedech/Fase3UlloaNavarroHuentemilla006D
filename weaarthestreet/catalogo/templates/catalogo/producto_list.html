@@ -2,9 +2,17 @@
 
 {%block content%}
 
-<h1>Lista de productos: </h1>
+{% load static %}
+<link href="{% static 'css/gg.css' %}" rel="stylesheet">
+
+
+<div class="masthead container d-flex align-items-center flex-column">
+<div class="login-page">
+<div class="form">
+<h1>Lista de productos </h1>
 
     {% if producto_list %}
+        {% if user.is_authenticated  %}
 
         <ul>
             {% for producto in producto_list %}
@@ -15,27 +23,17 @@
 
 
         </ul>
+        {% else %}
+        <p>Debes estar registrado para acceder a esta opcion</p>
+
+        {% endif %}
 
     {% else %}
         <p>No hay productos disponibles</p>
 
     {% endif %}
-<div class="container">
-    <div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-    </div>
+
+</div>
 </div>
 </div>
 {%endblock%}

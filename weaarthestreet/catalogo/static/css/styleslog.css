@@ -13,6 +13,9 @@
   padding: 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-radius: 20px;
 }
 .form input {
   font-family: "Roboto", sans-serif;
@@ -86,5 +89,5 @@ label {
 }
 
 body{
-background-image: url(../img/gg.jpg);
+background-image: url(../img/rr.jpg);
 }

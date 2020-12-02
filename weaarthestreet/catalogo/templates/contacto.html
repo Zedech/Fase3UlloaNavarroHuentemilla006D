@@ -8,10 +8,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     {% load static %}
+    <link href="{% static 'css/gg1.css' %}" rel="stylesheet">
     </head>
     <body>
-        <div class="container-fluid" style="padding-top: 20px;">
-            <form id="gg" action="index.html" id="formulario">
+        <br>
+        <br>
+        <div class="gg" style="text-align: center;">
+            <p>Rellene el siguiente formulario para resolver cualquier duda que tengas.</p>
+        </div>
+        <br>
+    <div class="gg" >
+        
+        {% if user.is_authenticated  %}
+        
+            <form  action="index.html" method="POST">
+                <div class="ff">
+                <p> Contacto </p>
               <label>Nombre:</label>
               <input type="text" name="nombre" minlength="2">
             
@@ -26,47 +38,39 @@
             
               <label>Fecha: </label>
               <input type="date" name="fecha" min="2020-01-01" required>
-    
+                
               <label>¿Que necesitas?</label>
               <input type="text" name="opinion" placeholder="Escribe aqui">
-              
-              
-    
-            </form>
-          </div>
-
-          <div class="container-fluid">
-              <div>
-                  
+              <br>
+              <div class="container-fluid">
                   <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <button class="btn btn" id="oso">Enviar</button>
-                  <br>
-                  <br>
-                  <br>
-                  
-                  
-                 
-                 
-
+                <button class="btn btn" id="oso">Enviar</button>
               </div>
+            </div>
+            </form>
+        
+          {% else %}
+          <div>
+            <p>Debes estar registrado para acceder a esta opcion</p>
           </div>
+
+        
+
+        {% endif %}
+
+          </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
     </body>
 </html>
 {% endblock %}

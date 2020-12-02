@@ -12,6 +12,13 @@ class Marca(models.Model):
         def __str__(self):
 	        return self.marca
 
+        def get_absolute_url(self):
+            return reverse('marca-detalles', args=[str(self.id)])
+
+		
+
+		
+
 			
 
 class Producto(models.Model):

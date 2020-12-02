@@ -1,0 +1,39 @@
+{%extends "base_generic.html"%}
+
+{%block content%}
+
+{% load static %}
+    <link href="{% static 'css/gg.css' %}" rel="stylesheet">
+
+<div class="masthead container d-flex align-items-center flex-column">
+<div class="login-page">
+<div class="form">
+<h1>Lista de marcas</h1>
+ {% if marca_list %}
+    {% if user.is_authenticated  %}
+
+<ul>
+    {% for marca in marca_list %}
+    <li>
+        <a href="{{ marca.get_absolute_url }}"> {{ marca.marca }} 
+    </li>
+    {% endfor %}
+
+    {% else %}
+    <p>Debes estar registrado para acceder a esta opcion</p>
+
+
+    {% endif %}
+
+
+</ul>
+
+{% else %}
+<p>No hay productos disponibles</p>
+
+{% endif %}
+
+</div>
+</div>
+</div>
+{%endblock%}
